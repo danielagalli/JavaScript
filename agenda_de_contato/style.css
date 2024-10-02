@@ -1,0 +1,45 @@
+/*formatação css*/
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f00;
+}*/
+.menu{
+    background-color:#c03f08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid #f00 ;*/
+
+}
+.principal{
+    background-color:#FFE4E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid #f00;*/
+    background-color: #ddd;
+    width: 100%;
+    height: 100vh;
+}
+.aba{
+    background-color:#a21707;
+    color:#fff;
+    text-transform:uppercase;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right:1px; 
+}
+.abaSelecionada{
+    /*quando clicar na aba*/
+    background-color: #FFB6C1 !important;
+}
