@@ -1,35 +1,30 @@
 *{
     font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.body{
-   /*background: #121212;*/
+body{
+   background: #121212;
    width: 100%; /*largura*/
    min-height: 100vh; /*minima altura*/
    display: flex;
    justify-content: center;
    align-items: center;
 }
-.conteiner{
-        background-color: #fafafa;
-        border-radius: 14px;
-        margin: 14px;
-        max-width: 600px;
-        width: 100%;
-        box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
-        overflow: hidden;
+.container{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
 }
 .header{
     background:linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
     padding: 24px;
     text-align: center;
     color: #FFF;
-}
-.rodape{
-    background:linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
-
 }
 .form{
     padding: 18px;
@@ -41,29 +36,29 @@
 }
 .form-content label{
     display: inline-block;
-    margin-bottom:4px;
+    margin-bottom: 4px;
 }
-.form-content input{
+.form-content input{/**CONFIGURANDO O CAMPO ONDE VAI AS INFORMAÇÕES*/
     display: block;
     width: 100%;
     border-radius: 8px;
     padding: 8px;
     border: 2px solid #dfdfdf;
 }
-.form-content{
+.form-content a{
     position: absolute;
     bottom: -8px;
     left: 0;
     visibility: hidden; /*funçao que só aparece para acusar erro de login*/
 }
-.form-content button{
+.form button{
     background-color: #00c3ff;
     color: #FFF;
     width: 100%;
     border-radius: 14px;
     padding: 10px;
     border: pointer;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 .form-content.error input{
     border-color: #ff3b25;

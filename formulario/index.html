@@ -7,29 +7,44 @@
 
     <title>formulario</title>
 </head>
+
 <body>
+
     <div class="container">
+
         <section class="header">
             <h2>Nova conta</h2>
         </section>
-
-        <form id="form">
-            <div class="form-content">
-                <label for="username">Nome do Usuário:</label>
-                <input type="text" id="usermane" placeholder="Digite o nome do usuario..."/>
-                <a>aqui vai a mensagem de erro... </a>
-            </div>
+        
+        <form id="form" class="form">
 
             <div class="form-content">
                 <label for="username">Nome do Usuário:</label>
-                <input type="text" id="usermane" placeholder="Digite o nome do usuario..."/>
-                <a>aqui vai a mensagem de erro... </a>
+                <input type="text" id="username" placeholder="Digite o nome do usuario"/>
+                <a>aqui vai a mensagem de erro</a>
             </div>
+
+            <div class="form-content">
+                <label for="email">email</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail"/>
+                <a>aqui vai a mensagem de erro</a>
+            </div>
+
+           <div class="form-content">
+                <label for="username">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha"/>
+                <a>aqui vai a mensagem de erro</a>
+            </div>
+
+            <div class="form-content">
+                <label for="password-confirmation">Confirmaçao de Senha</label>
+                <input type="password-confirmation" id="password-confirmation" placeholder="Digite sua senha"/>
+                <a>aqui vai a mensagem de erro</a>
+            </div>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
-    <footer>
-        <section class="rodape">
-        </section>
-    </footer>
+
+    <script src="js.js"></script>
 </body>
 </html>
