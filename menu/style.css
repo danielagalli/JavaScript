@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit', sans-serif;
+}
+body{
+    height: 100vh;
+}
+nav.menu-lateral{/*personalizando o menu*/
+    width: 80px;/*largura*/
+    height: 100%;/*altura*/
+    background-color: rosybrown;/*cor do fundo*/
+    padding: 40px 0 40px 1%;/*40px parte superior lado direito 0 em baixo 40px lado esquerto 1%*/
+    box-shadow: 3px 0 0 pink;/*para deixar a barra lateral*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+nav.menu-lateral.expandir{
+/*esta função serve para quando ao clicar NÃO irá expandir o menu lateral
+mas se inserir a função hover  menu lateral irá expandir*/
+    width: 300px;
+}
+.btn-expandir{/*estilizando o menu dos tres rsquinhos*/
+    width: 100;/*largura*/
+    padding-left: 10px;/*Preenche o lado esquerdo de um elemento*/
+}
+.btn-expandir i{
+    color: white;/*cor dos riscos*/
+    font-size: 24px;
+    cursor: pointer;/*determina o ponteiro do elemento*/
+}
+ul{/*estilizando as opções do menu*/
+    height: 100px;/*altura*/
+    list-style-type:none;/*Para desaparecer as bolinhas da lista*/
+}
+ul li.item-menu{
+    transition: .1s;/*esta função serve para quando passar o mouse por cima das opções o tempo que aparece a sobre posição*/
+}
+ul li.ativo{
+    background-color: #FF0077;
+}
+
+ul li.item-menu:hover{/*esta função serve para que quando passar o mouse em cima o bacground se sobreponha*/
+    background: pink;
+}
+
+ul li.item-menu a{ /*estilizando as opções do menu */
+    color:black;
+    text-decoration: none; /*tira o sublinhado da palavra*/
+    font-size: 20px;/*tamanho da letra*/
+    padding: 20px 4%;/*20px cima/embaixo 4% direito/esquerdo*/
+    display:flex;/*espaço entre as opções do menu*/
+    margin-bottom: 20px;/*Para ter mais espaços entre os elementos*/
+    line-height: 40px;/*altura de linha*/
+}
+ul li.item-menu a .txt-link{/*Para estilizar o menu dos icones da palavra*//*tx-link fica dentro do link do icone*/
+    margin-left: 70px;/*margin para esquerta*/
+    transition: .5s;
+
+}
+nav.menu-lateral.btn-expandir .txt-link{
+/*sempre que menu lateral tiver a classe expandir quero que aconteça 
+alguma coisa com txt-link*/
+    margin-left: 40px;
+}
+ul li.item-menu a .icon i{/*Para estilizar os icones do menu*/
+    font-size: 30px;
+}
