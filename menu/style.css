@@ -40,10 +40,6 @@ ul{/*estilizando as opções do menu*/
 ul li.item-menu{
     transition: .1s;/*esta função serve para quando passar o mouse por cima das opções o tempo que aparece a sobre posição*/
 }
-ul li.ativo{
-    background-color: #FF0077;
-}
-
 ul li.item-menu:hover{/*esta função serve para que quando passar o mouse em cima o bacground se sobreponha*/
     background: pink;
 }
@@ -57,12 +53,12 @@ ul li.item-menu a{ /*estilizando as opções do menu */
     margin-bottom: 20px;/*Para ter mais espaços entre os elementos*/
     line-height: 40px;/*altura de linha*/
 }
-ul li.item-menu a .txt-link{/*Para estilizar o menu dos icones da palavra*//*tx-link fica dentro do link do icone*/
-    margin-left: 70px;/*margin para esquerta*/
-    transition: .5s;
 
+ul li.item-menu a .txt-link{/*Para estilizar o menu dos icones da palavra*//*tx-link fica dentro do link do icone*/
+    margin-left: 55px;/*margin para esquerta*/
+    transition: .5s;
 }
-nav.menu-lateral.btn-expandir .txt-link{
+nav.menu-lateral.expandir .txt-link{
 /*sempre que menu lateral tiver a classe expandir quero que aconteça 
 alguma coisa com txt-link*/
     margin-left: 40px;
